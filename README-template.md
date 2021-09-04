@@ -2,109 +2,65 @@
 
 This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
+## Welcome! 👋
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+Thanks for checking out this front-end coding challenge.
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-## Overview
+## The challenge
 
-### The challenge
+Users should be able to:
 
-- Build out the project to the designs provided
+- View the optimal layout depending on their device's screen size
+- Positioning background images related to the profile card
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screenshot](./design/solution-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/giseleschaves/3-column-preview-card-component-main)
+- Live Site URL: (https://giseleschaves.github.io/3-column-preview-card-component-main/)
 
 ## My process
+
+- 1. check the difference between mobile and desktop to create the hmtl structure
+- 2. upload fonts, identify colors and where they should be aplied
+- 2. implemented the profile card
+- 3. in another html tested solutions positioning of the card with the background images
+- 4. integrated the solution into the index.html
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Positioning and Background images
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I review one fundamental conceps that I got stuck during the challenge:
 
-To see how you can add code snippets, see below:
+- positioning relative and absolute
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Basically I have to review better the difference between these two options of positioning and how they work togheter. The better approach was to develop a solution using simple divs to learn first and reproduce the effect that was required.
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+If the background divs are inside of the card container, z-index doesn't work and the background always appear over the card.
+If the background divs are after or before the card container, their position will flow related to the page and change how the size increase or decrease.
+The solution was to create another container to englobe the tree elements the card and the two background divs and positioning them using absolute to keep them at the same poisition no matter the size of the page.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Understand more about positioning because when the orientation is landscape the soliution to put the main container on the center doesn't work well.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+Thanks Kyle for this amazing tutorial about positioning
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- Kyle from Web Dev Simplified - Learn Positioning (https://youtu.be/jx5jmI0UlXU)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - @giseleschaves(https://www.frontendmentor.io/profile/giseleschaves)
+- Twitter - @gisele_s_chaves(https://www.twitter.com/gisele_s_chaves)
