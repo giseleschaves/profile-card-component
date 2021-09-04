@@ -1,6 +1,6 @@
 # Frontend Mentor - Profile card component solution
 
-This is a solution to the ![Profile card component challenge on Frontend Mentor](./design/desktop-preview.png). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the ![Profile card component challenge on Frontend Mentor](./design/desktop-preview.jpg). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Welcome! 👋
 
